@@ -105,7 +105,28 @@ nav > h1{
     height: auto;
 }
 
-
+/*--------------------------
+others company logos styles
+----------------------------*/
+.others-company-logos{
+    width: 100%;
+    height: fit-content;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    width: 85%;
+    height: 100px;
+    border: 3px solid #F1E4FF;
+    border-radius: 8px;
+    margin: 69px auto;
+}
+.logos img{
+    width: 91px;
+    height: 38px;
+}
 /* Start Responsive design */
 
 /*-----------------------------------
@@ -166,6 +187,25 @@ nav > h1{
         width: 70vw;
         height: auto;
     }
+    /* made other company logos responsive */
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 6vw;
+        justify-items: center;
+        width: 85%;
+        height: 100px;
+        margin: 7vw auto;
+        border: 0;
+    }
+    .logos img:last-of-type{
+        grid-column: 1 / -1;
+    }
+    .logos img{
+        width: 8vw;
+        height: 5vw;
+    }
  }
 
  /*-----------------------------------
@@ -204,6 +244,7 @@ nav > h1{
     }
     .banner-description{
         font-size: 3vw;
+        margin-bottom: 2vw;
     }
     .banner-description > br{
         display: none;
@@ -224,5 +265,19 @@ nav > h1{
     .banner-img img{
         width: 70vw;
         height: auto;
+    }
+    /* made other company logos responsive */
+    .logos{
+        display: flex;
+        gap: 3.5vw;
+        justify-items: center;
+        width: 80%;
+        height: 100px;
+        margin: 7vw auto;
+        border: 0;
+    }
+    .logos img{
+        width: 8vw;
+        height: 5vw;
     }
  }
