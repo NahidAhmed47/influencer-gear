@@ -20,7 +20,7 @@ body{
 .header nav{
     display: flex;
     justify-content: space-between;
-    padding: 87px 120px 80px 120px;
+    padding: 87px 120px 50px 120px;
 }
 nav > h1{
     color: var(--primary-color);
@@ -51,7 +51,62 @@ nav > h1{
 .menu ul li a .cart{
     font-size: 34px;
 }
+/*------------------
+ Banner side styles 
+--------------------*/
+.banner{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+.banner-info{
+    margin: 95px 0 0 120px;
+}
+.banner-title{
+    color: var(--primary-color);
+    font-size: 52px;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+.banner-description{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+.btn-banner{
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.btn-banner i{
+    width: 16px;
+    color: #ffffff;
+    padding-left: 4px;
+}
+.banner-img{
+    width: 475px;
+    height: 475px;
+    border: 4px solid #F1E4FF;
+    margin-right: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-img img{
+    width: 440px;
+    height: auto;
+}
 
+
+/* Start Responsive design */
 
 /*-----------------------------------
  Responsive styles for Mobile devices 
@@ -74,6 +129,43 @@ nav > h1{
     .menu ul{
         display: none;
     }
+    /* made banner responsive */
+    .banner{
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+    }
+    .banner-info{
+        width: 85%;
+        margin: 5vw auto;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 7vw;
+    }
+    .banner-description{
+        font-size: 3vw;
+    }
+    .banner-description > br{
+        display: none;
+    }
+    .btn-banner{
+        width: 45%;
+        height: 10vw;
+        border-radius: 10vw;
+        padding: 2vw 5vw;
+        font-size: 3vw;
+    }
+    .banner-img{
+        width: 75%;
+        height: auto;
+        border: 4px solid #F1E4FF;
+        margin-right: 0;
+    }
+    .banner-img img{
+        width: 70vw;
+        height: auto;
+    }
  }
 
  /*-----------------------------------
@@ -95,5 +187,42 @@ nav > h1{
     }
     .menu ul li a .cart{
         font-size: 4vw;
+    }
+    /* made banner responsive */
+    .banner{
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+    }
+    .banner-info{
+        width: 85%;
+        margin: 5vw auto;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 7vw;
+    }
+    .banner-description{
+        font-size: 3vw;
+    }
+    .banner-description > br{
+        display: none;
+    }
+    .btn-banner{
+        width: 45%;
+        height: 10vw;
+        border-radius: 10vw;
+        padding: 2vw 5vw;
+        font-size: 3vw;
+    }
+    .banner-img{
+        width: 75%;
+        height: auto;
+        border: 4px solid #F1E4FF;
+        margin-right: 0;
+    }
+    .banner-img img{
+        width: 70vw;
+        height: auto;
     }
  }
