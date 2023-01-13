@@ -1,0 +1,99 @@
+/* font styles import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* variable declare */
+:root{
+    --primary-color: #3A3A3A;
+}
+/* Global css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #f0efef;
+}
+
+/* Header styles */
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 87px 120px 80px 120px;
+}
+nav > h1{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo .menu-icon{
+    display: none;
+    width: 5vw;
+    height: auto;
+}
+.menu > ul{
+    display: flex;
+    gap: 34px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu ul li a .search{
+    font-size: 24px;
+}
+.menu ul li a .cart{
+    font-size: 34px;
+}
+
+
+/*-----------------------------------
+ Responsive styles for Mobile devices 
+ ------------------------------------*/
+ @media only screen and (max-width: 576px) {
+    /* made header responsive */
+    .header nav{
+        display: inline-block;
+        padding: 10vw;
+    }
+    .header nav .logo{
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        font-size: 5vw;
+    }
+    .logo .menu-icon{
+        display: inline;
+    }
+    .menu ul{
+        display: none;
+    }
+ }
+
+ /*-----------------------------------
+ Responsive styles for Medium devices 
+ ------------------------------------*/
+ @media only screen and (min-width: 577px) and (max-width: 992px) {
+    /* made header responsive */
+    .header nav{
+        padding: 8vw 3vw 6vw 3vw;
+    }
+    nav .logo{
+        font-size: 3vw;
+    }
+    .menu > ul{
+        gap: 3vw;
+    }
+    .menu ul li a{
+        font-size: 2vw;
+    }
+    .menu ul li a .cart{
+        font-size: 4vw;
+    }
+ }
