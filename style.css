@@ -192,15 +192,53 @@ others company logos styles
 }
 .see-more{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    float: right;
     color: #E02C6DDE;
     margin-top: 50px;
     font-size: 16px;
     gap: 8px;
+    margin-left: 88%;
 }
 
+/* ----------------------
+features products styles 
+-------------------------*/
+.features-products{
+    display: flex;
+    justify-content: center;
+}
+.features-products-container{
+    display: flex;
+    gap: 96px;
+    align-items: stretch;
+    width: 85%;
+    margin: 100px auto;
+    border:0;
+}
+.section-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 16px 0;
+}
+.features-description{
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.btn-join-now{
+    width: 155px;
+    height: 44px;
+    background: #E02C6D;
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-join-now > i{
+    margin-left: 5px;
+}
 /* Start Responsive design */
 
 /*-----------------------------------
@@ -317,6 +355,42 @@ others company logos styles
     .product-description{
         font-size: 3vw;
     }
+    .see-more{
+        margin-left: 36%;
+    }
+    /* made features products responsive */
+    .features-products{
+        width: 100%;
+    }
+    .features-products-container{
+        flex-direction: column-reverse;
+        gap: 10vw;
+        align-items: center;
+        width: 100%;
+        margin: 12vw auto;
+        border:0;
+    }
+    .products-info{
+        text-align: center;
+    }
+    .section-title{
+        font-size: 8vw;
+    }
+    .features-description{
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+    .btn-join-now{
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .products-img{
+        width: 100%;
+    }
+    .products-img img{
+        width: 100%;
+    }
  }
 
  /*-----------------------------------
@@ -426,6 +500,43 @@ others company logos styles
     }
     .product-description{
         font-size: 3vw;
+    }
+    .see-more{
+        margin-left: 35%;
+    }
+
+    /* made features products responsive */
+    .features-products{
+        width: 100%;
+    }
+    .features-products-container{
+        flex-direction: column-reverse;
+        gap: 10vw;
+        align-items: center;
+        width: 100%;
+        margin: 12vw auto;
+        border:0;
+    }
+    .products-info{
+        text-align: center;
+    }
+    .section-title{
+        font-size: 8vw;
+    }
+    .features-description{
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+    .btn-join-now{
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .products-img{
+        width: 100%;
+    }
+    .products-img img{
+        width: 100%;
     }
     
  }
