@@ -48,7 +48,7 @@ nav > h1{
 .menu ul li a .search{
     font-size: 24px;
 }
-.menu ul li a .cart{
+.menu ul li a .header-cart{
     font-size: 34px;
 }
 /*------------------
@@ -127,6 +127,79 @@ others company logos styles
     width: 91px;
     height: 38px;
 }
+
+/*--------------------------
+ Popular connection styles 
+ ---------------------------*/
+ .popular-connection{
+    width: 75%;
+    margin: 0 auto;
+ }
+ .popular-connection > .section-title{
+    text-align: center;
+    margin: 100px auto 50px auto;
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 600;
+ }
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.cart{
+    padding: 17px 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+.cart img{
+    width: 100%;
+    height: auto;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--primary-color);
+    margin: 16px 0 6px 0;
+}
+.product-price{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 8px 0;
+}
+.rating  i{
+    width: 7px;
+    color: #FB8200;
+}
+.rating > p {
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.product-description{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+.see-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    color: #E02C6DDE;
+    margin-top: 50px;
+    font-size: 16px;
+    gap: 8px;
+}
+
 /* Start Responsive design */
 
 /*-----------------------------------
@@ -206,6 +279,43 @@ others company logos styles
         width: 8vw;
         height: 5vw;
     }
+    /* made Popular connection responsive */
+    .popular-connection{
+        width: 80%;
+        margin: 0 auto;
+     }
+     .popular-connection > .section-title{
+        text-align: center;
+        margin: 10vw auto 5vw auto;
+        font-size: 7vw;
+        font-weight: 600;
+     }
+    .cart-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .product-name{
+        font-size: 7vw;
+        margin: 5vw 0 3vw 0;
+    }
+    .product-price{
+        font-size: 5.5vw;
+    }
+    .rating{
+        gap: 3vw;
+        margin: 2vw 0;
+    }
+    .rating  i{
+        width: 2vw;
+    }
+    .rating > p {
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+    .product-description{
+        font-size: 3vw;
+    }
  }
 
  /*-----------------------------------
@@ -280,4 +390,41 @@ others company logos styles
         width: 8vw;
         height: 5vw;
     }
+    /* made Popular connection responsive */
+    .popular-connection{
+        width: 95%;
+        margin: 0 auto;
+     }
+     .popular-connection > .section-title{
+        text-align: center;
+        margin: 10vw auto 5vw auto;
+        font-size: 7vw;
+        font-weight: 600;
+     }
+    .cart-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .product-name{
+        font-size: 7vw;
+        margin: 5vw 0 3vw 0;
+    }
+    .product-price{
+        font-size: 5.5vw;
+    }
+    .rating{
+        gap: 3vw;
+        margin: 2vw 0;
+    }
+    .rating  i{
+        width: 2vw;
+    }
+    .rating > p {
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+    .product-description{
+        font-size: 3vw;
+    }
+    
  }
