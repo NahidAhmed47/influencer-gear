@@ -239,6 +239,38 @@ features products styles
 .btn-join-now > i{
     margin-left: 5px;
 }
+/*---------------------
+ footer section styles 
+ ----------------------*/
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div{
+    text-align: center;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.copy-right{
+    font-size: 14px;
+    font-weight: 600;
+    color: #D9DBE1;
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    padding: 25px 0;
+}
 /* Start Responsive design */
 
 /*-----------------------------------
@@ -390,6 +422,14 @@ features products styles
     }
     .products-img img{
         width: 100%;
+    }
+    /* made footer responsive */
+    .footer-title{
+        font-size: 6vw;
+        padding-bottom: 2vw;
+    }
+    .copy-right{
+        font-size: 3vw;
     }
  }
 
